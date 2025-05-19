@@ -1,0 +1,40 @@
+Situation
+With the growing volume of online transactions, detecting fraudulent credit card activity has become a major challenge in the financial industry. Traditional rule-based systems often fail to catch complex patterns of fraud, prompting the need for more intelligent, data-driven solutions.
+
+Task
+The goal of this project was to develop a machine learning model capable of accurately identifying fraudulent credit card transactions from a highly imbalanced dataset. The objective was to test and compare different models, optimize their performance, and address the class imbalance inherent in fraud detection.
+
+Analysis
+The dataset used included anonymized features (V1–V28), along with Amount, Time, and a Class label (0 for normal and 1 for fraud).
+
+The data was highly imbalanced, with fraudulent transactions comprising a very small fraction of the total.
+
+Exploratory data analysis (EDA) was conducted to understand distributions and detect correlations.
+
+Data preprocessing included:
+
+Scaling the Amount feature using StandardScaler.
+
+Splitting the data into training and test sets.
+
+Applying SMOTE (Synthetic Minority Oversampling Technique) to balance the training data.
+
+Various machine learning models were trained and evaluated:
+
+Logistic Regression
+
+Decision Tree Classifier
+
+Random Forest Classifier
+
+Evaluation metrics included accuracy, precision, recall, F1-score, and AUC-ROC curve.
+
+Results
+Logistic Regression provided a good baseline but struggled with recall due to class imbalance.
+
+Random Forest Classifier delivered the best overall performance with high recall and precision, making it more suitable for identifying fraudulent transactions.
+
+Applying SMOTE significantly improved the model's ability to detect fraud by addressing the class imbalance.
+
+The best-performing model achieved strong metrics across the board, particularly in recall, which is crucial for fraud detection use cases.
+
